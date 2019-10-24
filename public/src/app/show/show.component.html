@@ -1,0 +1,17 @@
+<div *ngIf="movie">
+    <h1 class="header">Reviews for {{movie.title}}</h1>
+    <button class="header_button" [routerLink]="['/movies']">Go Home</button>
+    <button class="header_button" [routerLink]="['/movies/destroy', movie._id]">Delete</button>
+    <table>
+        <tr>
+            <th>Reviewer</th>
+            <th>Stars</th>
+            <th>Reviews</th>
+        </tr>
+        <tr *ngFor="let r of movie.reviews">
+            <td>{{r.name}}</td>
+            <td>{{r.rating}}</td>
+            <td>{{r.review}}</td>
+        </tr>
+    </table>
+    

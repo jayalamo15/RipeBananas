@@ -1,0 +1,18 @@
+<div  *ngIf="allMovies" >
+    <h1 class="header">Movie List</h1>
+    <button class="header_button" [routerLink]="['/movies/new']" >Add a new movie</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Available Actions</th>
+            </tr>    
+        </thead>
+        <tbody>
+        <tr *ngFor="let m of allMovies">
+            <td>{{m.title}}</td>
+            <td><button class="link_button" [routerLink]="['/movies', m._id]">Read Reviews</button> <button class="link_button"  [routerLink]="['/movies/review',m._id]">Write Review</button></td>
+        </tr>
+        </tbody>
+        
+    </table>

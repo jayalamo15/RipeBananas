@@ -1,0 +1,25 @@
+/* *{
+    outline: 1px solid red;
+} */
+.header{
+    display: inline-block; margin-right:10%;
+}
+.header_button{
+    display: inline-block;
+    font-size: large;
+}
+th, td{
+    width: 300px;
+    border-style: solid;
+}
+table{
+    border-style: solid;
+    font-size: large;
+    text-align: center;
+}
+.link_button{
+    font-size: large;
+    display: inline-block;
+    margin-right: 2%;
+    
+}

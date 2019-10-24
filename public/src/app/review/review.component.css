@@ -1,0 +1,16 @@
+label{
+    font-size: large;
+}
+.link_button{
+    font-size: large;
+    display: inline-block;
+    margin-right: 1%;
+}
+input{
+    font-size: large;
+    display: inline-block;
+    margin-right: 2%;
+}
+textarea{
+    font-size: large;
+}
